@@ -26,56 +26,62 @@
                 fill="#D5CCB6" />
         </svg>
     </header>
-
-    <section id="text_top" class="container">
-        <h1>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15"
-                    stroke="#FFC632" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M10 17L15 12L10 7" stroke="#FFC632" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path d="M15 12H3" stroke="#FFC632" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <span>
-                Faça seu Login
-            </span>
-
-        </h1>
-        <h3>Entre com suas informações de cadastro.</h3>
-    </section>
-
-    <form action="" class="container">
-        <label for="">
-            <h3>E-mail</h3>
-            <input type="email">
-        </label>
-
-        <label for="">
-            <h3>Senha</h3>
-            <input type="password">
-        </label>
-
-        <br>
-
-        <div>
-            <label for="">
-                <input type="checkbox">
+    
+    <main>
+        <section id="text_top" class="container">
+            <h1>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15"
+                        stroke="#FFC632" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10 17L15 12L10 7" stroke="#FFC632" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M15 12H3" stroke="#FFC632" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
                 <span>
-                    <h3 style="font-weight: 400;">Lembre-me</h3>
+                    Faça seu Login
                 </span>
+
+            </h1>
+            <h3>Entre com suas informações de cadastro.</h3>
+        </section>
+
+        <form action="" class="container">
+            <label for="">
+                <h3 class="top_h3">E-mail</h3>
+                <input type="email" id="mail" placeholder="Digite seu e-mail">
             </label>
-            <h3>
-                <a href="">Esqueci minha senha</a>
-            </h3>
-        </div>
 
-        <button>Entrar</button>
+            <label for="">
+                <h3 class="top_h3">Senha</h3>
+                <input type="password" id="pass" placeholder="Digite sua senha">
+            </label>
 
-        <div class="text_yellow">
+            <br>
+
+            <div id="rememberme">
+                <div id="remember_box">
+                    <label for="">
+                        <input type="checkbox" id="check">
+                    </label>
+
+                    <span>
+                        <h3 style="font-weight: 400;">Lembre-me</h3>
+                    </span>
+                </div>
+                <h3>
+                    <a href="">Esqueci minha senha</a>
+                </h3>
+            </div>
+
+            <button>Entrar</button>
+
+            <div class="text_yellow">
                 <p>Não tem uma conta? <a href="">Registre-se</a></p>
-        </div>
-    </form>
+            </div>
+        </form>
+    </main>
 </body>
 
 </html>

@@ -22,7 +22,12 @@ body{
     background-color: var(--background);
     padding-top: 8%;
 }
-
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 h1, h2{
     color: var(--text-title);
     margin: 0px;
@@ -56,7 +61,7 @@ header{
 }
 
 section{
-    margin: 1.5rem auto;
+    margin: 2rem auto;
 }
 
 section>h1{
@@ -69,7 +74,81 @@ form{
     margin: 0px auto;
 }
 
+form h3.top_h3{
+    margin-top: 1.5rem;
+}
+form input#mail, input#pass{
+    width: 100%;
+    border: 1.5px solid #868686;
+    margin: 0px;
+
+    font-size: 1.2rem;
+
+    box-sizing: border-box;
+    outline-style: none;
+    padding-block: 0.8rem;
+    border-radius: 0.2rem;
+    background-color: transparent;
+    color: var(--text-base);
+    padding-inline: 1rem;
+    margin-top: 0.2rem;
+}
+
+input#mail:focus, input#pass:focus{
+    transition: 0.2s;
+    border: 2px solid var(--primary-color);
+}
+
+div#rememberme{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 1rem;
+}
+
+div#remember_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+div#remember_box #check{
+    appearance: none;
+    padding: 0.8rem;
+    border: 1.5px solid var(--text-base);
+    border-radius: 0.3rem;
+    margin: 0px;
+}
+
+#check:checked{
+    appearance: none;
+    background: url(./asstes/check.svg) no-repeat center;
+    background-color: var(--primary-color);
+    padding: 0px;
+    border: 1.5px solid transparent !important;
+    transition: 0.2s;
+}
+
+
+button{
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    width: 100%;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-block: 1rem;
+
+    color: #473404;
+    background-color: var(--primary-color);
+    border-radius: 0.3rem;
+}
+
 .text_yellow{
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
     color: var(--primary-color);
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
