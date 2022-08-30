@@ -9,6 +9,7 @@ html{
     font-size: 93.75%; /*15px*/
 }
 body{
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -18,7 +19,6 @@ body{
     /* font-family: 'Roboto', sans-serif; */
     
     height: 100vh;
-    margin: 0;
     background-color: var(--background);
     padding-top: 8%;
 }
@@ -153,4 +153,34 @@ button{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 1.1rem;
+}
+
+@media screen and (min-width:1440px) {
+    html{
+        font-size: 90%;
+        margin: 0px;
+    }
+    header{
+        position: absolute;
+        top: 5%;        
+    }
+    body{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+        width: 50%;
+        background-image: url(./asstes/side-image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: right;
+        background-position-y: center;
+        background-size: auto; 
+    }
+
+    main{
+        width: 50vw;
+    }
 }
